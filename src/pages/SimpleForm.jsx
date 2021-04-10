@@ -6,7 +6,7 @@ export function SimpleForm() {
             <form onSubmit={(target) => console.log(target.values)}>
                 <label>
                     Name:
-                    <input type="text"/>
+                    <input id='name' type="text"/>
                 </label>
                 <input type="submit" value="Submit"/>
             </form>
