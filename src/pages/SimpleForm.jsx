@@ -1,14 +1,14 @@
 import React from 'react';
 
-export function SimpleForm() {
+export function SimpleForm({label, actionText}) {
     return (
         <>
             <form onSubmit={(target) => console.log(target.values)}>
                 <label>
-                    Name:
-                    <input id='name' type="text"/>
+                    {label}:
+                    <input id='input-text' type="text"/>
                 </label>
-                <input type="submit" value="Submit"/>
+                <input id='submit-button' type="submit" value={actionText}/>
             </form>
         </>
     );
